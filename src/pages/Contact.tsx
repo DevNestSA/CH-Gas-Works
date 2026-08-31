@@ -1,0 +1,14 @@
+import { useState } from 'react'
+import { Button } from '../components/Button'
+import { Seo } from '../components/Seo'
+import { site } from '../data/site'
+import { services } from '../data/services'
+
+export function ContactPage() {
+  const [submitted, setSubmitted] = useState(false)
+  return <main id="main"><Seo title="Contact | CH Gas Works" description="Contact CH Gas Works by phone, email or WhatsApp for gas installation, repair and maintenance enquiries." />
+    <section className="page-hero"><div className="container"><p className="eyebrow eyebrow--on-dark">Get in touch</p><h1>Tell us what you need.</h1><p>For a quote or service enquiry, contact CH Gas Works directly.</p></div></section>
+    <section className="section"><div className="container contact-layout"><aside className="contact-panel"><p className="eyebrow">Direct contact</p><h2>Speak to CH Gas Works.</h2><p>Prefer a quick conversation? WhatsApp is available for enquiries.</p><div className="contact-method"><span>PHONE / WHATSAPP</span><a href={site.phoneHref}>{site.phoneDisplay}</a><a className="contact-wa" href={site.whatsappHref} target="_blank" rel="noreferrer">Open WhatsApp →</a></div><div className="contact-method"><span>EMAIL</span><a href={site.emailHref}>{site.email}</a></div><div className="contact-method"><span>HOURS</span><strong>{site.hours}</strong></div><div className="contact-method"><span>SERVICE AREA</span><strong>Throughout South Africa</strong></div></aside>
+      <div className="form-panel"><div className="form-panel__intro"><p className="eyebrow">Online enquiry</p><h2>Request a quote</h2><p>Send your details below. This front-end form is ready to be connected to the preferred email/form service.</p></div>{submitted ? <div className="form-success"><span>✓</span><h2>Enquiry captured</h2><p>Your message has been captured in this demo. Connect the form to an email service before launch.</p><Button type="button" variant="secondary" onClick={() => setSubmitted(false)}>Send another enquiry</Button></div> : <form className="contact-form" onSubmit={e => { e.preventDefault(); setSubmitted(true) }}><div className="form-grid"><label>Name<input required name="name" autoComplete="name" /></label><label>Phone<input required type="tel" name="phone" autoComplete="tel" /></label><label>Email<input required type="email" name="email" autoComplete="email" /></label><label>Service<select required name="service" defaultValue=""><option value="" disabled>Select a service</option>{services.map(s => <option key={s.id}>{s.title}</option>)}</select></label><label className="form-grid__full">Message<textarea required name="message" rows={6} placeholder="Tell us a little about the gas work you need…" /></label></div><Button type="submit">Send enquiry</Button></form>}</div></div></section>
+  </main>
+}
