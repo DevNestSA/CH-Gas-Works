@@ -12,7 +12,6 @@ function ContactValue({ href, children }: { href?: string; children: string }) {
 
 export function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
-  const whatsapp = whatsappHref(site.whatsappDisplay, 'Hi CH Gas Works, I would like to enquire about your gas services.')
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -79,10 +78,10 @@ export function ContactPage() {
                 </div>
               </li>
             </ul>
-            {whatsapp && <Button href={whatsapp}>
+            <Button href={whatsappHref(site.whatsappDisplay, 'Hi CH Gas Works, I would like to enquire about your gas services.')} >
               <IconWhatsApp />
               Chat on WhatsApp
-            </Button>}
+            </Button>
           </aside>
 
           <div className="form-panel">

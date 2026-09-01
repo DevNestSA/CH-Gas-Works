@@ -3,7 +3,7 @@ export const site = {
   shortName: 'CH Gas Works',
   industry: 'Gas installation, repairs, maintenance and related gas services',
   locale: 'en-ZA',
-  url: '' as string,
+  url: '',
   phoneDisplay: '+27 82 474 3960',
   email: '',
   whatsappDisplay: '+27 82 474 3960',
