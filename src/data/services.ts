@@ -2,50 +2,52 @@ export type Service = {
   id: string
   slug: string
   title: string
+  eyebrow: string
   summary: string
   detail: string
-  icon: 'install' | 'repair' | 'maintain' | 'appliance' | 'manifold' | 'commercial' | 'industrial' | 'coc'
+  icon: 'home' | 'commercial' | 'industrial' | 'compressed'
+  items: string[]
 }
 
 export const services: Service[] = [
   {
-    id: 'installations', slug: 'gas-installations', title: 'Gas Installations',
-    summary: 'Professional gas installation services for residential, commercial and industrial requirements.',
-    detail: 'CH Gas Works provides gas installation services for homes, businesses and industrial environments, with each project approached according to the client’s requirements.', icon: 'install',
+    id: 'domestic',
+    slug: 'domestic-residential',
+    title: 'Domestic & Residential',
+    eyebrow: 'Homes & residential properties',
+    summary: 'Professional gas work for homes, including installations and Certificates of Compliance for insurance requirements.',
+    detail: 'CH Gas Works provides gas installation services for residential properties, with a focus on practical, professional installations for everyday home applications.',
+    icon: 'home',
+    items: ['Certificates of Compliance for insurance', 'Gas hob installations', 'Gas stove installations', 'Gas geyser installations'],
   },
   {
-    id: 'repairs', slug: 'gas-repairs', title: 'Gas Repairs',
-    summary: 'Practical repair services for gas installations and related equipment.',
-    detail: 'When a gas installation or related equipment needs attention, CH Gas Works can assess the requirement and provide practical repair support.', icon: 'repair',
+    id: 'commercial',
+    slug: 'commercial-gas-installations',
+    title: 'Commercial Gas Installations',
+    eyebrow: 'Commercial & food-service sites',
+    summary: 'Gas installation solutions for restaurants, food trailers, school feeding schemes and factories.',
+    detail: 'Commercial installations are tailored to the requirements of the site and equipment, including both liquid and vapour gas installations.',
+    icon: 'commercial',
+    items: ['Restaurant equipment', 'Food trailers', 'School feeding schemes', 'Factories', 'Liquid gas installations', 'Vapour gas installations'],
   },
   {
-    id: 'maintenance', slug: 'gas-maintenance', title: 'Gas Maintenance',
-    summary: 'Maintenance services to help keep gas installations operating reliably.',
-    detail: 'Regular maintenance can help identify issues early and keep gas installations in good working order. Contact CH Gas Works to discuss your maintenance requirements.', icon: 'maintain',
+    id: 'industrial',
+    slug: 'industrial-gas-installations',
+    title: 'Industrial Gas Installations',
+    eyebrow: 'Bulk LPG & industrial systems',
+    summary: 'Installation, maintenance and repair services for bulk LPG tank systems and industrial gas applications.',
+    detail: 'Industrial work includes bulk LPG tank installations together with ongoing maintenance, repairs and re-certification of bulk tanks.',
+    icon: 'industrial',
+    items: ['Bulk LPG tank installations', 'Bulk tank maintenance', 'Bulk tank repairs', 'Re-certification of bulk tanks'],
   },
   {
-    id: 'appliances', slug: 'gas-appliances', title: 'Gas Appliances',
-    summary: 'Gas appliance services for residential and business requirements.',
-    detail: 'CH Gas Works can assist with gas appliance-related requirements. Contact us with the appliance and work you need so the job can be discussed before proceeding.', icon: 'appliance',
-  },
-  {
-    id: 'manifolds', slug: 'gas-manifolds', title: 'Gas Manifolds',
-    summary: 'Gas manifold solutions for installations that require organised gas distribution.',
-    detail: 'Gas manifolds form part of many multi-appliance installations. CH Gas Works can discuss manifold requirements for residential, commercial or industrial applications.', icon: 'manifold',
-  },
-  {
-    id: 'commercial', slug: 'commercial-gas-solutions', title: 'Commercial Gas Solutions',
-    summary: 'Gas installation, repair and maintenance support for commercial properties and businesses.',
-    detail: 'Commercial properties often have practical gas requirements that need dependable service. CH Gas Works works with businesses to discuss installation, repair and maintenance needs.', icon: 'commercial',
-  },
-  {
-    id: 'industrial', slug: 'industrial-gas-solutions', title: 'Industrial Gas Solutions',
-    summary: 'Gas services for industrial sites and larger operational requirements.',
-    detail: 'CH Gas Works provides a structured starting point for industrial gas requirements, including installation, repair and maintenance work. Contact us to discuss your site and requirements.', icon: 'industrial',
-  },
-  {
-    id: 'coc', slug: 'certificates-of-compliance', title: 'Certificates of Compliance',
-    summary: 'Assistance with gas compliance documentation where applicable.',
-    detail: 'For projects requiring compliance documentation, contact CH Gas Works to discuss the work completed and the documentation required for your installation.', icon: 'coc',
+    id: 'compressed',
+    slug: 'compressed-gasses',
+    title: 'Compressed Gasses',
+    eyebrow: 'Medical & specialist gas systems',
+    summary: 'Installation, repairs and maintenance for medical, laboratory and specialist compressed gas systems.',
+    detail: 'CH Gas Works works with a broad range of compressed gas and vacuum systems, supporting installations, repairs and maintenance.',
+    icon: 'compressed',
+    items: ['Medical Oxygen', 'Nitrogen', 'Carbon dioxide', 'Helium', 'Acetylene', 'Argon', 'Entenox', 'Nitrous Oxide', 'Vacuum systems', 'Medical Air'],
   },
 ]

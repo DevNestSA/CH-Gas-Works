@@ -1,15 +1,18 @@
 export const site = {
   name: 'CH Gas Works',
   shortName: 'CH Gas Works',
-  industry: 'Gas installation, repairs, maintenance and related gas services',
+  industry: 'Gas installation, repairs, maintenance and compressed gas systems',
   locale: 'en-ZA',
-  url: '',
-  phoneDisplay: '+27 82 474 3960',
-  email: '',
-  whatsappDisplay: '+27 82 474 3960',
-  address: 'Contact us on WhatsApp for service availability and location details.',
-  serviceArea: 'Residential, commercial and industrial clients',
-  hours: 'Contact us for availability',
+  phoneDisplay: '082 474 3960',
+  phoneHref: 'tel:+27824743960',
+  email: 'chgas@live.co.za',
+  emailHref: 'mailto:chgas@live.co.za',
+  whatsappDisplay: '082 474 3960',
+  whatsappHref: 'https://wa.me/27824743960?text=Hi%20CH%20Gas%20Works%2C%20I%20would%20like%20to%20enquire%20about%20your%20gas%20services.',
+  serviceArea: 'South Africa',
+  hours: 'Monday – Friday, 08:00 – 17:00',
+  founded: '2012',
+  gasExperience: 'Since 1999',
 } as const
 
 export const navLinks = [
@@ -18,29 +21,3 @@ export const navLinks = [
   { to: '/services', label: 'Services' },
   { to: '/contact', label: 'Contact' },
 ] as const
-
-export function isPlaceholder(value: string) {
-  return value.includes('[') && value.includes(']')
-}
-
-export function telHref(phone: string) {
-  if (!phone || isPlaceholder(phone)) return undefined
-  return `tel:${phone.replace(/\s+/g, '')}`
-}
-
-export function mailtoHref(email: string) {
-  if (!email || isPlaceholder(email)) return undefined
-  return `mailto:${email}`
-}
-
-export function whatsappHref(number: string, message?: string) {
-  if (!number || isPlaceholder(number)) return undefined
-  const digits = number.replace(/\D/g, '')
-  const suffix = message ? `?text=${encodeURIComponent(message)}` : ''
-  return `https://wa.me/${digits}${suffix}`
-}
-
-export function resolvedSiteUrl(path = '') {
-  if (!site.url) return undefined
-  return `${site.url.replace(/\/$/, '')}${path}`
-}

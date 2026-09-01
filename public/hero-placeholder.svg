@@ -3,16 +3,16 @@
   <desc>Replace this artwork with photography of CH Gas Works installations or team.</desc>
   <defs>
     <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse">
-      <rect width="8" height="8" fill="#f4f1ec"/>
-      <rect width="1" height="1" fill="#e8e4de" x="3" y="2"/>
+      <rect width="8" height="8" fill="#171b20"/>
+      <rect width="1" height="1" fill="#1f242b" x="3" y="2"/>
     </pattern>
   </defs>
-  <rect width="720" height="900" fill="#ffffff"/>
+  <rect width="720" height="900" fill="#15191e"/>
   <rect width="720" height="900" fill="url(#grain)"/>
   <g fill="none" stroke="#c45c26" stroke-width="2" opacity="0.9">
     <rect x="48" y="56" width="624" height="788"/>
   </g>
-  <g fill="none" stroke="#7b8086" stroke-width="3" stroke-linecap="round">
+  <g fill="none" stroke="#8d949c" stroke-width="3" stroke-linecap="round">
     <path d="M180 720h360"/>
     <path d="M220 720v-220h80v-90h120v90h80v220"/>
     <circle cx="300" cy="410" r="28"/>
@@ -25,6 +25,6 @@
   <g fill="#c45c26">
     <path d="M352 268c8 18 12 28 12 42a28 28 0 1 1-56 0c0-8 2-16 7-26 8 12 12 18 21 18 0-20 8-34 16-34z" opacity="0.95"/>
   </g>
-  <text x="360" y="820" text-anchor="middle" fill="#9d471b" font-family="Arial, sans-serif" font-size="22" letter-spacing="4">HERO IMAGE</text>
-  <text x="360" y="850" text-anchor="middle" fill="#7b8086" font-family="Arial, sans-serif" font-size="14">Replace with CH Gas Works photography</text>
+  <text x="360" y="820" text-anchor="middle" fill="#f0c4a8" font-family="Arial, sans-serif" font-size="22" letter-spacing="4">HERO IMAGE</text>
+  <text x="360" y="850" text-anchor="middle" fill="#8d949c" font-family="Arial, sans-serif" font-size="14">Replace with CH Gas Works photography</text>
 </svg>

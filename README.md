@@ -30,7 +30,7 @@ npm run preview
 - Shared layout: `src/components/`
 - Pages: `src/pages/`
 
-Replace `[CH GAS WORKS LOGO]` in `src/components/Logo.tsx` with the real logo image when it is available. Replace `public/hero-placeholder.svg` with approved CH Gas Works photography (or update the hero image source in `Home.tsx`).
+Replace `[CH GAS WORKS LOGO]` in `src/components/Logo.tsx` with the real logo image when it is available. Replace `/public/hero-placeholder.svg` with photography.
 
 ## Placeholders
 
