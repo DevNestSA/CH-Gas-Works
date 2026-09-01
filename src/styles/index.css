@@ -1,23 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root {
-  --ink: #14171b;
-  --charcoal: #1c2026;
-  --slate: #5b6168;
-  --muted: #6f757c;
-  --line: rgba(20, 23, 27, 0.12);
-  --line-strong: rgba(20, 23, 27, 0.2);
-  --paper: #f6f3ee;
-  --mist: #ece8e2;
-  --white: #fffcf8;
-  --ember: #c45c26;
-  --ember-dark: #9d471b;
-  --ember-soft: #f3e2d4;
-  --header-h: 4.5rem;
-  --font: "IBM Plex Sans", "Segoe UI", sans-serif;
-  --display: "IBM Plex Sans Condensed", "IBM Plex Sans", sans-serif;
-  --shadow: 0 18px 40px rgba(20, 23, 27, 0.08);
-  --radius: 2px;
-  --max: 72rem;
-  color-scheme: light;
+  --black: #141414;
+  --charcoal: #292929;
+  --red: #B52A24;
+  --red2: #D83A2E;
+  --cream: #F4F1EC;
+  --white: #FFFFFF;
+
+  --muted: #68645f;
+  --line: rgba(20, 20, 20, 0.12);
+
+  --max: 76rem;
+  --header: 5.2rem;
+
+  --display: 'Bebas Neue', sans-serif;
+  --body: 'Montserrat', sans-serif;
 }
 
 *,
@@ -33,11 +31,10 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font);
-  font-size: 1.0625rem;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--body);
   line-height: 1.65;
-  color: var(--ink);
-  background: var(--paper);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -152,7 +149,17 @@ textarea {
 }
 
 .section {
-  padding: 4.5rem 0;
+  padding: 5.5rem 0;
+  background: var(--white);
+}
+
+.section--paper {
+  background: var(--cream);
+}
+
+.section--dark {
+  background: var(--black);
+  color: #d7d3cf;
 }
 
 @media (min-width: 768px) {
@@ -1194,11 +1201,6 @@ body.nav-open .nav-toggle__bars span:nth-child(3) {
   }
 }
 
-/* =========================================================
-   LIGHT VISUAL REFRESH
-   White-led layout with CH Gas Works red as the accent.
-   ========================================================= */
-
 :root {
   --paper: #ffffff;
   --mist: #f6f4f0;
@@ -1318,7 +1320,6 @@ body {
   border: 1px solid var(--line);
 }
 
-/* Secondary buttons now work on white */
 .btn--on-dark {
   background: transparent;
   color: var(--ink);
@@ -1340,7 +1341,6 @@ body {
   border-bottom-color: var(--line) !important;
 }
 
-/* CTA is now a light, bordered callout rather than another dark block */
 .cta-banner {
   background: #fff;
   color: var(--ink);
