@@ -35,10 +35,10 @@ export function HomePage() {
             <p className="hero__lead">Professional gas installation, repair and maintenance solutions for residential, commercial and industrial clients.</p>
             <div className="hero__actions">
               <Button to="/contact">Request a Quote</Button>
-              <Button href={whatsapp} variant="secondary">
+              {whatsapp && <Button href={whatsapp} variant="secondary">
                 <IconWhatsApp />
                 WhatsApp Us
-              </Button>
+              </Button>}
             </div>
           </div>
           <figure className="hero__visual">
