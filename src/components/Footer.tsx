@@ -1,16 +1,20 @@
 import { Link } from 'react-router-dom'
-import { navLinks, site } from '../data/site'
+import { navLinks, site, telHref, whatsappHref } from '../data/site'
 import { services } from '../data/services'
 import { Logo } from './Logo'
+import { IconPhone, IconPin, IconWhatsApp } from './Icons'
 
 export function Footer() {
-  return <footer className="site-footer">
-    <div className="container footer-grid">
-      <div className="footer-brand"><Logo variant="light" compact={false} /><p>Professional gas installation, repairs, maintenance and compressed gas services for residential, commercial and industrial clients across South Africa.</p><a className="footer-whatsapp" href={site.whatsappHref} target="_blank" rel="noreferrer">Chat on WhatsApp <span>↗</span></a></div>
-      <div><h2>Company</h2><ul>{navLinks.map(l => <li key={l.to}><Link to={l.to}>{l.label}</Link></li>)}</ul></div>
-      <div><h2>Services</h2><ul>{services.map(s => <li key={s.id}><Link to={`/services#${s.slug}`}>{s.title}</Link></li>)}</ul></div>
-      <div><h2>Contact</h2><ul className="footer-contact"><li><span>PHONE</span><a href={site.phoneHref}>{site.phoneDisplay}</a></li><li><span>EMAIL</span><a href={site.emailHref}>{site.email}</a></li><li><span>HOURS</span><strong>{site.hours}</strong></li><li><span>AREA</span><strong>South Africa</strong></li></ul></div>
-    </div>
-    <div className="container footer-bottom"><span>© {new Date().getFullYear()} CH Gas Works. All rights reserved.</span><span>Gas solutions you can trust.</span></div>
-  </footer>
+  const year = new Date().getFullYear()
+  return (
+    <footer className="site-footer">
+      <div className="container footer-grid">
+        <div className="footer-brand"><Logo variant="dark" /><p>Professional gas installation, repair and maintenance solutions for residential, commercial and industrial clients.</p></div>
+        <div><h2>Navigation</h2><ul>{navLinks.map((link) => <li key={link.to}><Link to={link.to}>{link.label}</Link></li>)}<li><Link to="/contact">Request a Quote</Link></li></ul></div>
+        <div><h2>Services</h2><ul>{services.map((service) => <li key={service.id}><Link to={`/services#${service.slug}`}>{service.title}</Link></li>)}</ul></div>
+        <div><h2>Contact</h2><ul className="footer-contact"><li><IconPhone /><a href={telHref(site.phoneDisplay)}>+27 82 474 3960</a></li><li><IconWhatsApp /><a href={whatsappHref(site.whatsappDisplay, 'Hi CH Gas Works, I would like to enquire about your gas services.')}>WhatsApp us</a></li><li><IconPin /><span>{site.address}<br />{site.serviceArea}</span></li></ul></div>
+      </div>
+      <div className="footer-base"><div className="container footer-base__inner"><p>© {year} CH Gas Works. All rights reserved.</p><p>Professional gas solutions</p></div></div>
+    </footer>
+  )
 }

@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { navLinks, site } from '../data/site'
+import { navLinks } from '../data/site'
 import { Button } from './Button'
 import { Logo } from './Logo'
 
@@ -10,29 +10,79 @@ export function Header() {
 
   useEffect(() => {
     document.body.classList.toggle('nav-open', open)
-    return () => document.body.classList.remove('nav-open')
+    function onKey(event: KeyboardEvent) {
+      if (event.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      document.body.classList.remove('nav-open')
+    }
   }, [open])
+
+  function close() {
+    setOpen(false)
+  }
 
   return (
     <header className="site-header">
-      <div className="top-strip"><div className="container top-strip__inner"><span>Professional gas solutions across South Africa</span><a href={site.whatsappHref} target="_blank" rel="noreferrer">WhatsApp {site.whatsappDisplay}</a></div></div>
-      <div className="site-header__inner container">
-        <Logo variant="light" />
+      <div className="site-header__inner">
+        <Logo variant="dark" />
+
         <nav className="nav-desktop" aria-label="Primary">
-          {navLinks.map((link) => <NavLink key={link.to} to={link.to} end={link.to === '/'}>{link.label}</NavLink>)}
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+              end={link.to === '/'}
+            >
+              {link.label}
+            </NavLink>
+          ))}
         </nav>
+
         <div className="site-header__actions">
-          <a className="header-phone" href={site.phoneHref}>{site.phoneDisplay}</a>
-          <Button to="/contact" className="site-header__cta">Request a Quote</Button>
-          <button type="button" className="nav-toggle" aria-expanded={open} aria-controls={menuId} onClick={() => setOpen(v => !v)}>
-            <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span><span className="nav-toggle__bars"><span /><span /><span /></span>
+          <Button to="/contact" className="site-header__cta">
+            Request a Quote
+          </Button>
+          <button
+            type="button"
+            className="nav-toggle"
+            aria-expanded={open}
+            aria-controls={menuId}
+            onClick={() => setOpen((value) => !value)}
+          >
+            <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
+            <span className="nav-toggle__bars" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </span>
           </button>
         </div>
       </div>
-      <div className={`nav-drawer ${open ? 'is-open' : ''}`} id={menuId}>
+
+      <div
+        className={`nav-drawer ${open ? 'is-open' : ''}`}
+        id={menuId}
+        aria-hidden={!open}
+      >
         <nav className="nav-drawer__nav" aria-label="Mobile">
-          {navLinks.map((link) => <NavLink key={link.to} to={link.to} end={link.to === '/'} onClick={() => setOpen(false)}>{link.label}</NavLink>)}
-          <Button to="/contact" onClick={() => setOpen(false)}>Request a Quote</Button>
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              onClick={close}
+              className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+              end={link.to === '/'}
+            >
+              {link.label}
+            </NavLink>
+          ))}
+          <Button to="/contact" onClick={close}>
+            Request a Quote
+          </Button>
         </nav>
       </div>
     </header>
