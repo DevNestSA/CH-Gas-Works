@@ -183,8 +183,7 @@ export function ContactPage() {
                   Send another enquiry
                 </Button>
 
-                <Button
-                  to="/" onClick={() => setOpen(false)}>
+                <Button to="/">
                   Return Home
                 </Button>
 
