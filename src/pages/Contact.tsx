@@ -5,13 +5,12 @@ import { Seo } from '../components/Seo'
 import { site } from '../data/site'
 import { services } from '../data/services'
 import emailjs from '@emailjs/browser'
-import { HomePage } from './Home'
 
 export function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
-  const [open, setOpen] = useState(false)
+  const [setOpen] = useState(false)
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
   e.preventDefault()
