@@ -14,6 +14,7 @@ export function ServicesPage() {
       {/* Page Hero */}
       <section className="page-hero">
         <div className="container">
+
           <p className="eyebrow eyebrow--on-dark">
             Our services
           </p>
@@ -29,6 +30,7 @@ export function ServicesPage() {
           <p>
             Explore the areas CH Gas Works covers across South Africa.
           </p>
+
         </div>
       </section>
 
@@ -43,11 +45,13 @@ export function ServicesPage() {
               id={s.slug}
               key={s.id}
             >
+
               <div className="service-detail__number">
                 {String(i + 1).padStart(2, '0')}
               </div>
 
               <div>
+
                 <p className="eyebrow">
                   {s.eyebrow}
                 </p>
@@ -63,9 +67,11 @@ export function ServicesPage() {
                 <p>
                   {s.detail}
                 </p>
+
               </div>
 
               <div className="service-detail__items">
+
                 <span>
                   Scope
                 </span>
@@ -77,7 +83,9 @@ export function ServicesPage() {
                     </li>
                   ))}
                 </ul>
+
               </div>
+
             </article>
           ))}
 
@@ -85,7 +93,7 @@ export function ServicesPage() {
       </section>
 
 
-      {/* Products */}
+      {/* Products & Equipment */}
       <section className="section products-section">
         <div className="container">
 
@@ -93,33 +101,17 @@ export function ServicesPage() {
 
             <div>
               <p className="eyebrow">
-                Products
+                Products & equipment
               </p>
 
               <h2>
-                Gas products
+                Equipment
                 <br />
-                and equipment.
+                we install.
               </h2>
             </div>
 
-            <div className="products-section__intro">
-              <p>
-                We supply and recommend quality gas products and
-                equipment for domestic and commercial applications.
-              </p>
-
-              <a
-                href="/contact"
-                className="btn btn--secondary"
-              >
-                Enquire about products
-                <span aria-hidden="true"> →</span>
-              </a>
-            </div>
-
           </div>
-
 
           <div className="products-grid">
 
@@ -165,7 +157,7 @@ export function ServicesPage() {
                     href="/contact"
                     className="product-card__link"
                   >
-                    Enquire now
+                    Enquire about installation
                     <span aria-hidden="true"> →</span>
                   </a>
 
@@ -185,6 +177,7 @@ export function ServicesPage() {
         <div className="container products-cta__inner">
 
           <div>
+
             <p className="eyebrow">
               Need assistance?
             </p>
@@ -194,9 +187,10 @@ export function ServicesPage() {
             </h2>
 
             <p>
-              Get in touch with CH Gas Works for professional
-              advice and a quotation.
+              Get in touch with CH Gas Works for professional advice
+              and a quotation.
             </p>
+
           </div>
 
           <a

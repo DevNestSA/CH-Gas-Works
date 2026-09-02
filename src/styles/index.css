@@ -749,3 +749,277 @@ body {
   }
 
 }
+/* =========================================================
+   INDUSTRY BODIES
+   ========================================================= */
+
+.industry-bodies {
+  background: #f4f1ec;
+  overflow: hidden;
+}
+
+.industry-bodies__heading {
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+
+.industry-bodies__heading h2 {
+  max-width: 900px;
+}
+
+.industry-bodies__accent {
+  width: 64px;
+  height: 3px;
+  background: #b52a24;
+  margin: 24px 0 26px;
+}
+
+.industry-bodies__heading > p:last-child {
+  max-width: 760px;
+}
+
+
+/* ---------------------------------------------------------
+   WHITE BANNER
+   --------------------------------------------------------- */
+
+.industry-bodies__banner {
+  background: #ffffff;
+  border: 1px solid rgba(20, 20, 20, 0.12);
+  padding: 48px 52px 54px;
+}
+
+
+/* ---------------------------------------------------------
+   BANNER HEADING
+   --------------------------------------------------------- */
+
+.industry-bodies__banner-heading {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 52px;
+}
+
+.industry-bodies__banner-heading > div {
+  text-align: center;
+}
+
+.industry-bodies__line {
+  height: 1px;
+  background: rgba(181, 42, 36, 0.45);
+}
+
+.industry-bodies__flame {
+  display: block;
+  color: #b52a24;
+  font-size: 25px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.industry-bodies__banner-heading h3 {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b52a24;
+}
+
+
+/* ---------------------------------------------------------
+   LOGOS
+   --------------------------------------------------------- */
+
+.industry-bodies__logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+}
+
+.industry-body-logo {
+  min-height: 320px;
+  padding: 0 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.industry-body-logo + .industry-body-logo {
+  border-left: 1px solid rgba(20, 20, 20, 0.12);
+}
+
+
+/* ---------------------------------------------------------
+   IMAGE AREA
+   --------------------------------------------------------- */
+
+.industry-body-logo__image {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+}
+
+.industry-body-logo__image img {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 280px;
+  max-height: 125px;
+
+  object-fit: contain;
+}
+
+
+/* Individual sizing adjustments */
+
+.industry-body-logo:first-child
+.industry-body-logo__image img {
+  max-width: 150px;
+  max-height: 130px;
+}
+
+.industry-body-logo:nth-child(2)
+.industry-body-logo__image img {
+  max-width: 310px;
+  max-height: 115px;
+}
+
+.industry-body-logo:nth-child(3)
+.industry-body-logo__image img {
+  max-width: 285px;
+  max-height: 115px;
+}
+
+
+/* ---------------------------------------------------------
+   RED ACCENT
+   --------------------------------------------------------- */
+
+.industry-body-logo__accent {
+  width: 44px;
+  height: 2px;
+  background: #d83a2e;
+  display: block;
+  margin-bottom: 18px;
+}
+
+
+/* ---------------------------------------------------------
+   TITLES
+   --------------------------------------------------------- */
+
+.industry-body-logo h4 {
+  margin: 0 0 12px;
+
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 27px;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #141414;
+}
+
+.industry-body-logo p {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #555555;
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .industry-bodies__banner {
+    padding: 40px 30px 45px;
+  }
+
+  .industry-body-logo {
+    padding: 0 25px;
+  }
+
+  .industry-body-logo__image img {
+    max-width: 230px;
+  }
+
+  .industry-body-logo h4 {
+    font-size: 24px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .industry-bodies__heading {
+    margin-bottom: 40px;
+  }
+
+  .industry-bodies__banner {
+    padding: 34px 22px 40px;
+  }
+
+  .industry-bodies__banner-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 35px;
+  }
+
+  .industry-bodies__line {
+    width: 100%;
+  }
+
+  .industry-bodies__banner-heading h3 {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+
+  .industry-bodies__logos {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-body-logo {
+    min-height: auto;
+    padding: 35px 10px;
+  }
+
+  .industry-body-logo + .industry-body-logo {
+    border-left: none;
+    border-top: 1px solid rgba(20, 20, 20, 0.12);
+  }
+
+  .industry-body-logo__image {
+    height: 130px;
+  }
+
+  .industry-body-logo h4 {
+    font-size: 25px;
+  }
+
+  .industry-body-logo p {
+    font-size: 12px;
+  }
+}

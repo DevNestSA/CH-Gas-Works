@@ -6,45 +6,67 @@ export interface Product {
   image: string
 }
 
-export const products: Product[] = [
+export const products = [
   {
-    id: 'aeg-gas-hob',
-    name: 'AEG Gas Hob',
-    category: 'Gas Hobs',
+    id: 'gas-hobs',
+    name: 'Gas Hobs',
+    category: 'Kitchen Appliances',
+    image: '/images/products/gas-hob.webp',
     description:
-      'Built-in gas hob with four burners for efficient and reliable cooking.',
-    image: '/images/products/aeg-gas-hob.jpg',
+      'Professional installation of gas hobs for residential and commercial kitchens.',
   },
+
   {
-    id: 'hisense-5-burner-gas-hob',
-    name: 'Hisense 5-Burner Gas Hob',
-    category: 'Gas Hobs',
+    id: 'gas-stoves',
+    name: 'Gas & Gas/Electric Stoves',
+    category: 'Kitchen Appliances',
+    image: '/images/products/gas-stove.jpg',
     description:
-      'Spacious five-burner gas hob designed for performance and convenience.',
-    image: '/images/products/hisense-5-burner-gas-hob.jpg',
+      'Installation of gas and combination gas/electric stoves for a range of kitchen applications.',
   },
+
   {
-    id: 'paloma-26l-gas-geyser',
-    name: 'Paloma 26 L/min Gas Geyser',
-    category: 'Gas Geysers',
+    id: 'gas-geysers',
+    name: 'Gas Geysers',
+    category: 'Water Heating',
+    image: '/images/products/gas-geyser.png',
     description:
-      'High-capacity gas geyser ideal for medium to large homes and multiple bathrooms.',
-    image: '/images/products/paloma-26l-gas-geyser.jpg',
+      'Gas geyser installation for efficient domestic and commercial hot-water applications.',
   },
+
   {
-    id: 'defy-dgs902',
-    name: 'Defy Gas/Electric Stove Black DGS902',
-    category: 'Gas / Electric Stoves',
+    id: 'lpg-cylinders',
+    name: 'LPG Cylinders',
+    category: 'Gas Equipment',
+    image: '/images/products/lpg-cylinder.webp',
     description:
-      'Versatile gas/electric stove in a black finish with oven and hob for everyday cooking.',
-    image: '/images/products/defy-dgs902.jpg',
+      'Installation and connection of LPG cylinders and associated gas equipment.',
   },
+
   {
-    id: 'solar-lighting-kit',
-    name: 'Solar Lighting Kit',
-    category: 'Solar Lighting',
+    id: 'gas-regulators',
+    name: 'Gas Regulators',
+    category: 'Gas Equipment',
+    image: '/images/products/gas-regulator.webp',
     description:
-      'Complete solar lighting solution for reliable off-grid energy and illumination.',
-    image: '/images/products/solar-lighting-kit.jpg',
+      'Installation and replacement of gas regulators as part of a complete gas system.',
+  },
+
+  {
+    id: 'gas-burners',
+    name: 'Gas Burners',
+    category: 'Gas Equipment',
+    image: '/images/products/gas-burner.jpg',
+    description:
+      'Installation of gas burners and equipment for suitable domestic and commercial applications.',
+  },
+
+  {
+    id: 'solar-lighting',
+    name: 'Solar Lighting Systems',
+    category: 'Solar Equipment',
+    image: '/images/products/solar-lighting.jpg',
+    description:
+      'Installation of solar lighting systems where suitable for the application.',
   },
 ]
