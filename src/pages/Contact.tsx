@@ -10,7 +10,6 @@ export function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
-  const [setOpen] = useState(false)
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
   e.preventDefault()
