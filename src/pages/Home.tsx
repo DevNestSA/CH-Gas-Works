@@ -68,181 +68,182 @@ export function HomePage() {
       </section>
 
       {/* Experience & Industry */}
-<section className="section experience-industry">
-  <div className="container">
+      <section className="section experience-industry">
+        <div className="container">
 
-    <div className="experience-industry__main">
+          <div className="experience-industry__main">
 
-      <div className="experience-industry__heading">
-        <p className="eyebrow">
-          Built on experience
-        </p>
+            <div className="experience-industry__heading">
+              <p className="eyebrow">
+                Built on experience
+              </p>
 
-        <h2>
-          Gas work with a
-          <br />
-          long-term view.
-        </h2>
+              <h2>
+                Gas work with a
+                <br />
+                long-term view.
+              </h2>
 
-        <div className="experience-industry__accent" />
-      </div>
+              <div className="experience-industry__accent" />
+            </div>
 
-      <div className="experience-industry__content">
-        <p>
-          CH Gas Works started working with gas in 1999 after joining
-          Afrox, and the business was established in 2012.
-        </p>
+            <div className="experience-industry__content">
+              <p>
+                CH Gas Works started working with gas in 1999 after joining
+                Afrox, and the business was established in 2012.
+              </p>
 
-        <p>
-          Today the focus is on delivering dependable gas installation,
-          repair and maintenance services for residential, commercial,
-          industrial and compressed gas applications across South Africa.
-        </p>
+              <p>
+                Today the focus is on delivering dependable gas installation,
+                repair and maintenance services for residential, commercial,
+                industrial and compressed gas applications across South Africa.
+              </p>
 
-        <Link
-          className="text-link"
-          to="/about"
-        >
-          Our story <span>→</span>
-        </Link>
-      </div>
+              <Link
+                className="text-link"
+                to="/about"
+              >
+                Our story <span>→</span>
+              </Link>
+            </div>
 
-    </div>
-
-
-    <div className="experience-industry__credentials">
-
-      <div className="experience-stat">
-        <strong>1999</strong>
-        <span>Gas experience since</span>
-      </div>
-
-      <div className="experience-stat">
-        <strong>2012</strong>
-        <span>Business established</span>
-      </div>
-
-      <div className="experience-registration">
-        <p className="experience-registration__eyebrow">
-          Registered Gas Installer
-        </p>
-
-        <h3>
-          Professional gas
-          <br />
-          installation.
-        </h3>
-
-        <div className="experience-registration__accent" />
-
-        <p>
-          Registered gas installer with the LP Gas and Compressed
-          Gases installations.
-        </p>
-      </div>
-
-    </div>
-
-
-    <div className="experience-industry__bodies">
-
-      <div className="experience-industry__bodies-heading">
-
-        <div>
-          <p className="eyebrow">
-            Industry
-          </p>
-
-          <h3>
-            Industry bodies &amp; associations
-          </h3>
-        </div>
-
-        <p>
-          CH Gas Works operates within the South African gas industry
-          and works with the relevant industry bodies and requirements.
-        </p>
-
-      </div>
-
-
-      <div className="experience-industry__logos">
-
-        <div className="experience-industry__logo">
-
-          <div className="experience-industry__logo-image">
-            <img
-              src="/images/industry/lpgsa.png"
-              alt="LPGSA"
-            />
           </div>
 
-          <span />
 
-          <strong>LPGSA</strong>
+          <div className="experience-industry__credentials">
 
-          <small>
-            Liquefied Petroleum Gas
-            <br />
-            Association of South Africa
-          </small>
+            <div className="experience-stat">
+              <strong>1999</strong>
+              <span>Gas experience since</span>
+            </div>
 
-        </div>
+            <div className="experience-stat">
+              <strong>2012</strong>
+              <span>Business established</span>
+            </div>
 
+            <div className="experience-registration">
+              <p className="experience-registration__eyebrow">
+                Registered Gas Installer
+              </p>
 
-        <div className="experience-industry__logo">
+              <h3>
+                Professional gas
+                <br />
+                installation.
+              </h3>
 
-          <div className="experience-industry__logo-image">
-            <img
-              src="/images/industry/saqcc-gas.svg"
-              alt="SAQCC Gas"
-            />
+              <div className="experience-registration__accent" />
+
+              <p>
+                Registered gas installer with the LP Gas and Compressed
+                Gases installations.
+              </p>
+            </div>
+
           </div>
 
-          <span />
 
-          <strong>SAQCC Gas</strong>
+          <div className="experience-industry__bodies">
 
-          <small>
-            South African Qualification &amp;
-            <br />
-            Certification Committee for Gas
-          </small>
+            <div className="experience-industry__bodies-heading">
 
-        </div>
+              <div>
+                <p className="eyebrow">
+                  Industry
+                </p>
+
+                <h3>
+                  Industry bodies &amp; associations
+                </h3>
+              </div>
+
+              <p>
+                CH Gas Works operates within the South African gas industry
+                and works with the relevant industry bodies and requirements.
+              </p>
+
+            </div>
 
 
-        <div className="experience-industry__logo">
+            <div className="experience-industry__logos">
 
-          <div className="experience-industry__logo-image">
-            <img
-              src="/images/industry/employment-labour.jpg"
-              alt="Department of Employment and Labour"
-            />
+              <div className="experience-industry__logo">
+
+                <div className="experience-industry__logo-image">
+                  <img
+                    src="/images/industry/lpgsa.png"
+                    alt="LPGSA"
+                  />
+                </div>
+
+                <span />
+
+                <strong>LPGSA</strong>
+
+                <small>
+                  Liquefied Petroleum Gas
+                  <br />
+                  Association of South Africa
+                </small>
+
+              </div>
+
+
+              <div className="experience-industry__logo">
+
+                <div className="experience-industry__logo-image">
+                  <img
+                    src="/images/industry/saqcc-gas.svg"
+                    alt="SAQCC Gas"
+                  />
+                </div>
+
+                <span />
+
+                <strong>SAQCC Gas</strong>
+
+                <small>
+                  South African Qualification &amp;
+                  <br />
+                  Certification Committee for Gas
+                </small>
+
+              </div>
+
+
+              <div className="experience-industry__logo">
+
+                <div className="experience-industry__logo-image">
+                  <img
+                    src="/images/industry/employment-labour.jpg"
+                    alt="Department of Employment and Labour"
+                  />
+                </div>
+
+                <span />
+
+                <strong>
+                  Department of Employment
+                  <br />
+                  and Labour
+                </strong>
+
+                <small>
+                  Relevant occupational health
+                  <br />
+                  and safety requirements
+                </small>
+
+              </div>
+
+            </div>
+
           </div>
 
-          <span />
-
-          <strong>
-            Department of Employment
-            <br />
-            and Labour
-          </strong>
-
-          <small>
-            Relevant occupational health
-            <br />
-            and safety requirements
-          </small>
-
         </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
+      </section>
+      
       {/* Services Preview */}
       <section className="section section--paper services-preview">
         <div className="container">
