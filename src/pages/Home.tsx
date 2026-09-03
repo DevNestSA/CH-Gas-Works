@@ -48,22 +48,6 @@ export function HomePage() {
               </a>
             </div>
 
-            <div className="hero__facts">
-              <div>
-                <strong>1999</strong>
-                <span>gas experience since</span>
-              </div>
-
-              <div>
-                <strong>2012</strong>
-                <span>business established</span>
-              </div>
-
-              <div>
-                <strong>RSA</strong>
-                <span>work across South Africa</span>
-              </div>
-            </div>
           </div>
 
           <div className="hero__visual">
@@ -83,41 +67,182 @@ export function HomePage() {
         <div className="hero__edge" />
       </section>
 
+      {/* Experience & Industry */}
+<section className="section experience-industry">
+  <div className="container">
 
-      {/* Introduction */}
-      <section className="section intro">
-        <div className="container intro__grid">
+    <div className="experience-industry__main">
 
-          <div>
-            <p className="eyebrow">
-              Built on experience
-            </p>
+      <div className="experience-industry__heading">
+        <p className="eyebrow">
+          Built on experience
+        </p>
 
-            <h2>
-              Gas work with a long-term view.
-            </h2>
+        <h2>
+          Gas work with a
+          <br />
+          long-term view.
+        </h2>
+
+        <div className="experience-industry__accent" />
+      </div>
+
+      <div className="experience-industry__content">
+        <p>
+          CH Gas Works started working with gas in 1999 after joining
+          Afrox, and the business was established in 2012.
+        </p>
+
+        <p>
+          Today the focus is on delivering dependable gas installation,
+          repair and maintenance services for residential, commercial,
+          industrial and compressed gas applications across South Africa.
+        </p>
+
+        <Link
+          className="text-link"
+          to="/about"
+        >
+          Our story <span>→</span>
+        </Link>
+      </div>
+
+    </div>
+
+
+    <div className="experience-industry__credentials">
+
+      <div className="experience-stat">
+        <strong>1999</strong>
+        <span>Gas experience since</span>
+      </div>
+
+      <div className="experience-stat">
+        <strong>2012</strong>
+        <span>Business established</span>
+      </div>
+
+      <div className="experience-registration">
+        <p className="experience-registration__eyebrow">
+          Registered Gas Installer
+        </p>
+
+        <h3>
+          Professional gas
+          <br />
+          installation.
+        </h3>
+
+        <div className="experience-registration__accent" />
+
+        <p>
+          Registered gas installer with the LP Gas and Compressed
+          Gases installations.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div className="experience-industry__bodies">
+
+      <div className="experience-industry__bodies-heading">
+
+        <div>
+          <p className="eyebrow">
+            Industry
+          </p>
+
+          <h3>
+            Industry bodies &amp; associations
+          </h3>
+        </div>
+
+        <p>
+          CH Gas Works operates within the South African gas industry
+          and works with the relevant industry bodies and requirements.
+        </p>
+
+      </div>
+
+
+      <div className="experience-industry__logos">
+
+        <div className="experience-industry__logo">
+
+          <div className="experience-industry__logo-image">
+            <img
+              src="/images/industry/lpgsa.png"
+              alt="LPGSA"
+            />
           </div>
 
-          <div>
-            <p>
-              CH Gas Works started working with gas in 1999 after joining
-              Afrox, and the business was started in 2012. Today the focus
-              is on delivering dependable gas installation, repair and
-              maintenance services across South Africa.
-            </p>
+          <span />
 
-            <Link
-              className="text-link"
-              to="/about"
-            >
-              Our story <span>→</span>
-            </Link>
-          </div>
+          <strong>LPGSA</strong>
+
+          <small>
+            Liquefied Petroleum Gas
+            <br />
+            Association of South Africa
+          </small>
 
         </div>
-      </section>
 
 
+        <div className="experience-industry__logo">
+
+          <div className="experience-industry__logo-image">
+            <img
+              src="/images/industry/saqcc-gas.svg"
+              alt="SAQCC Gas"
+            />
+          </div>
+
+          <span />
+
+          <strong>SAQCC Gas</strong>
+
+          <small>
+            South African Qualification &amp;
+            <br />
+            Certification Committee for Gas
+          </small>
+
+        </div>
+
+
+        <div className="experience-industry__logo">
+
+          <div className="experience-industry__logo-image">
+            <img
+              src="/images/industry/employment-labour.jpg"
+              alt="Department of Employment and Labour"
+            />
+          </div>
+
+          <span />
+
+          <strong>
+            Department of Employment
+            <br />
+            and Labour
+          </strong>
+
+          <small>
+            Relevant occupational health
+            <br />
+            and safety requirements
+          </small>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
       {/* Services Preview */}
       <section className="section section--paper services-preview">
         <div className="container">
@@ -159,170 +284,6 @@ export function HomePage() {
       </section>
 
 
-      {/* Experience */}
-      <section className="section experience">
-        <div className="container experience__grid">
-
-          <div className="experience__visual">
-            <span>1999</span>
-            <strong>25+ years</strong>
-            <small>of gas industry experience</small>
-          </div>
-
-          <div>
-            <p className="eyebrow">
-              Experience matters
-            </p>
-
-            <h2>
-              From industry experience to an independent business.
-            </h2>
-
-            <p>
-              Experience gained from working with Afrox from 1999 laid the
-              foundation for CH Gas Works. Since 2012, that experience has
-              been applied through an independent business serving clients
-              with gas installation, maintenance and repair requirements.
-            </p>
-
-            <div className="stat-row">
-              <div>
-                <strong>1999</strong>
-                <span>Started working with gas</span>
-              </div>
-
-              <div>
-                <strong>2012</strong>
-                <span>CH Gas Works established</span>
-              </div>
-
-              <div>
-                <strong>RSA</strong>
-                <span>Service coverage</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Industry Bodies */}
-      <section className="section industry-bodies">
-        <div className="container">
-
-          <div className="section-heading industry-bodies__heading">
-            <p className="eyebrow">
-              Industry
-            </p>
-
-            <h2>
-              Working within the gas industry.
-            </h2>
-
-            <div className="industry-bodies__accent" />
-
-            <p>
-              CH Gas Works operates within the South African gas industry
-              and works in line with the relevant industry bodies and
-              regulatory requirements.
-            </p>
-          </div>
-
-          <div className="industry-bodies__banner">
-
-            <div className="industry-bodies__banner-heading">
-              <span className="industry-bodies__line" />
-
-              <div>
-                <span className="industry-bodies__flame">♨</span>
-                <h3>Industry Bodies &amp; Regulatory Framework</h3>
-              </div>
-
-              <span className="industry-bodies__line" />
-            </div>
-
-            <div className="industry-bodies__logos">
-
-              {/* LPGSA */}
-              <div className="industry-body-logo">
-
-                <div className="industry-body-logo__image">
-                  <img
-                    src="/images/industry/lpgsa.png"
-                    alt="LPGSA"
-                  />
-                </div>
-
-                <span className="industry-body-logo__accent" />
-
-                <h4>
-                  LPGSA
-                </h4>
-
-                <p>
-                  Liquefied Petroleum Gas
-                  <br />
-                  Association of South Africa
-                </p>
-
-              </div>
-
-              {/* SAQCC Gas */}
-              <div className="industry-body-logo">
-
-                <div className="industry-body-logo__image">
-                  <img
-                    src="/images/industry/saqcc-gas.svg"
-                    alt="SAQCC Gas"
-                  />
-                </div>
-
-                <span className="industry-body-logo__accent" />
-
-                <h4>
-                  SAQCC Gas
-                </h4>
-
-                <p>
-                  South African Qualification &amp;
-                  <br />
-                  Certification Committee for Gas
-                </p>
-
-              </div>
-
-              {/* Department of Employment and Labour */}
-              <div className="industry-body-logo">
-
-                <div className="industry-body-logo__image">
-                  <img
-                    src="/images/industry/employment-labour.jpg"
-                    alt="Department of Employment and Labour"
-                  />
-                </div>
-
-                <span className="industry-body-logo__accent" />
-
-                <h4>
-                  Department of
-                  <br />
-                  Employment and Labour
-                </h4>
-
-                <p>
-                  Relevant occupational health
-                  <br />
-                  and safety requirements
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
 
       {/*Google Reviews 
       <section className="section reviews-preview">

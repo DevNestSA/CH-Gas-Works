@@ -749,277 +749,338 @@ body {
   }
 
 }
+
 /* =========================================================
-   INDUSTRY BODIES
+   EXPERIENCE & INDUSTRY
    ========================================================= */
 
-.industry-bodies {
+.experience-industry {
   background: #f4f1ec;
   overflow: hidden;
 }
 
-.industry-bodies__heading {
-  max-width: 900px;
-  margin-bottom: 60px;
+.experience-industry__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: end;
+  margin-bottom: 70px;
 }
 
-.industry-bodies__heading h2 {
-  max-width: 900px;
+.experience-industry__heading h2 {
+  max-width: 600px;
+  margin: 0;
 }
 
-.industry-bodies__accent {
+.experience-industry__accent {
   width: 64px;
   height: 3px;
   background: #b52a24;
-  margin: 24px 0 26px;
+  margin-top: 28px;
 }
 
-.industry-bodies__heading > p:last-child {
-  max-width: 760px;
+.experience-industry__content {
+  max-width: 620px;
 }
 
+.experience-industry__content p {
+  margin: 0 0 20px;
+}
 
-/* ---------------------------------------------------------
-   WHITE BANNER
-   --------------------------------------------------------- */
-
-.industry-bodies__banner {
-  background: #ffffff;
-  border: 1px solid rgba(20, 20, 20, 0.12);
-  padding: 48px 52px 54px;
+.experience-industry__content .text-link {
+  margin-top: 12px;
 }
 
 
 /* ---------------------------------------------------------
-   BANNER HEADING
+   CREDENTIALS
    --------------------------------------------------------- */
 
-.industry-bodies__banner-heading {
+.experience-industry__credentials {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 34px;
-  margin-bottom: 52px;
+  grid-template-columns: 0.8fr 0.8fr 1.8fr;
+  border-top: 1px solid rgba(20, 20, 20, 0.14);
+  border-bottom: 1px solid rgba(20, 20, 20, 0.14);
+  margin-bottom: 80px;
 }
 
-.industry-bodies__banner-heading > div {
-  text-align: center;
-}
-
-.industry-bodies__line {
-  height: 1px;
-  background: rgba(181, 42, 36, 0.45);
-}
-
-.industry-bodies__flame {
-  display: block;
-  color: #b52a24;
-  font-size: 25px;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.industry-bodies__banner-heading h3 {
-  margin: 0;
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #b52a24;
-}
-
-
-/* ---------------------------------------------------------
-   LOGOS
-   --------------------------------------------------------- */
-
-.industry-bodies__logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: stretch;
-}
-
-.industry-body-logo {
-  min-height: 320px;
-  padding: 0 48px;
-
+.experience-stat {
+  min-height: 220px;
+  padding: 38px 45px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.industry-body-logo + .industry-body-logo {
-  border-left: 1px solid rgba(20, 20, 20, 0.12);
-}
-
-
-/* ---------------------------------------------------------
-   IMAGE AREA
-   --------------------------------------------------------- */
-
-.industry-body-logo__image {
-  width: 100%;
-  height: 150px;
-
-  display: flex;
-  align-items: center;
   justify-content: center;
-
-  margin-bottom: 22px;
 }
 
-.industry-body-logo__image img {
-  display: block;
-
-  width: auto;
-  height: auto;
-
-  max-width: 280px;
-  max-height: 125px;
-
-  object-fit: contain;
+.experience-stat + .experience-stat {
+  border-left: 1px solid rgba(20, 20, 20, 0.14);
 }
 
-
-/* Individual sizing adjustments */
-
-.industry-body-logo:first-child
-.industry-body-logo__image img {
-  max-width: 150px;
-  max-height: 130px;
+.experience-stat strong {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  line-height: 0.9;
+  color: #b52a24;
+  letter-spacing: 0.02em;
 }
 
-.industry-body-logo:nth-child(2)
-.industry-body-logo__image img {
-  max-width: 310px;
-  max-height: 115px;
-}
-
-.industry-body-logo:nth-child(3)
-.industry-body-logo__image img {
-  max-width: 285px;
-  max-height: 115px;
+.experience-stat span {
+  margin-top: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555555;
 }
 
 
-/* ---------------------------------------------------------
-   RED ACCENT
-   --------------------------------------------------------- */
+.experience-registration {
+  min-height: 220px;
+  padding: 38px 50px;
+  background: #141414;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.industry-body-logo__accent {
-  width: 44px;
+.experience-registration__eyebrow {
+  margin: 0 0 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d83a2e;
+}
+
+.experience-registration h3 {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 38px;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.experience-registration__accent {
+  width: 48px;
   height: 2px;
   background: #d83a2e;
-  display: block;
-  margin-bottom: 18px;
+  margin: 18px 0;
+}
+
+.experience-registration > p:last-child {
+  max-width: 620px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 
 /* ---------------------------------------------------------
-   TITLES
+   INDUSTRY BODIES
    --------------------------------------------------------- */
 
-.industry-body-logo h4 {
-  margin: 0 0 12px;
+.experience-industry__bodies {
+  padding-top: 10px;
+}
 
+.experience-industry__bodies-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 42px;
+}
+
+.experience-industry__bodies-heading h3 {
+  margin: 0;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 27px;
-  line-height: 1.05;
-  letter-spacing: 0.03em;
+  font-size: 38px;
+  line-height: 1;
   text-transform: uppercase;
-
+  letter-spacing: 0.02em;
   color: #141414;
 }
 
-.industry-body-logo p {
+.experience-industry__bodies-heading > p {
+  max-width: 560px;
   margin: 0;
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  line-height: 1.65;
   color: #555555;
 }
 
 
 /* ---------------------------------------------------------
-   TABLET
+   INDUSTRY LOGOS
    --------------------------------------------------------- */
 
-@media (max-width: 900px) {
+.experience-industry__logos {
+  background: #ffffff;
+  border: 1px solid rgba(20, 20, 20, 0.12);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  .industry-bodies__banner {
-    padding: 40px 30px 45px;
-  }
+.experience-industry__logo {
+  min-height: 270px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  .industry-body-logo {
-    padding: 0 25px;
-  }
+.experience-industry__logo + .experience-industry__logo {
+  border-left: 1px solid rgba(20, 20, 20, 0.12);
+}
 
-  .industry-body-logo__image img {
-    max-width: 230px;
-  }
+.experience-industry__logo-image {
+  width: 100%;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
 
-  .industry-body-logo h4 {
-    font-size: 24px;
-  }
+.experience-industry__logo-image img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.experience-industry__logo:first-child
+.experience-industry__logo-image img {
+  max-width: 125px;
+  max-height: 100px;
+}
+
+.experience-industry__logo:nth-child(2)
+.experience-industry__logo-image img {
+  max-width: 275px;
+  max-height: 90px;
+}
+
+.experience-industry__logo:nth-child(3)
+.experience-industry__logo-image img {
+  max-width: 250px;
+  max-height: 90px;
+}
+
+.experience-industry__logo > span {
+  display: block;
+  width: 42px;
+  height: 2px;
+  background: #d83a2e;
+  margin-bottom: 15px;
+}
+
+.experience-industry__logo strong {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.experience-industry__logo small {
+  margin-top: 9px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  line-height: 1.55;
+  color: #666666;
 }
 
 
-/* ---------------------------------------------------------
-   MOBILE
-   --------------------------------------------------------- */
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .experience-industry__main {
+    gap: 50px;
+  }
+
+  .experience-industry__credentials {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-registration {
+    grid-column: 1 / -1;
+  }
+
+  .experience-industry__bodies-heading {
+    gap: 40px;
+  }
+
+  .experience-industry__logo {
+    padding: 25px 20px;
+  }
+
+}
 
 @media (max-width: 700px) {
 
-  .industry-bodies__heading {
-    margin-bottom: 40px;
-  }
-
-  .industry-bodies__banner {
-    padding: 34px 22px 40px;
-  }
-
-  .industry-bodies__banner-heading {
+  .experience-industry__main {
     grid-template-columns: 1fr;
-    gap: 18px;
-    margin-bottom: 35px;
+    gap: 35px;
+    margin-bottom: 50px;
   }
 
-  .industry-bodies__line {
-    width: 100%;
+  .experience-industry__credentials {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
   }
 
-  .industry-bodies__banner-heading h3 {
-    font-size: 14px;
-    letter-spacing: 0.1em;
+  .experience-stat {
+    min-height: 160px;
+    padding: 30px;
   }
 
-  .industry-bodies__logos {
+  .experience-stat + .experience-stat {
+    border-left: none;
+    border-top: 1px solid rgba(20, 20, 20, 0.14);
+  }
+
+  .experience-registration {
+    grid-column: auto;
+    min-height: 240px;
+    padding: 35px 30px;
+  }
+
+  .experience-registration h3 {
+    font-size: 34px;
+  }
+
+  .experience-industry__bodies-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .experience-industry__bodies-heading h3 {
+    font-size: 32px;
+  }
+
+  .experience-industry__logos {
     grid-template-columns: 1fr;
   }
 
-  .industry-body-logo {
-    min-height: auto;
-    padding: 35px 10px;
+  .experience-industry__logo {
+    min-height: 230px;
   }
 
-  .industry-body-logo + .industry-body-logo {
+  .experience-industry__logo + .experience-industry__logo {
     border-left: none;
     border-top: 1px solid rgba(20, 20, 20, 0.12);
   }
 
-  .industry-body-logo__image {
-    height: 130px;
-  }
-
-  .industry-body-logo h4 {
-    font-size: 25px;
-  }
-
-  .industry-body-logo p {
-    font-size: 12px;
-  }
 }
