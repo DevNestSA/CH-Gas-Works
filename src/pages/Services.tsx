@@ -1,8 +1,6 @@
 import { Seo } from '../components/Seo'
 import { services } from '../data/services'
 import { products } from '../data/products'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { ServiceGallery } from '../components/ServiceGallery'
 
 export function ServicesPage() {
