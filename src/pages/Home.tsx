@@ -128,17 +128,14 @@ export function HomePage() {
               </p>
 
               <h3>
-                Professional gas
+                Registered gas installer with the
                 <br />
-                installation.
+                LP Gas and Compressed
+                Gases installations.
               </h3>
 
               <div className="experience-registration__accent" />
 
-              <p>
-                Registered gas installer with the LP Gas and Compressed
-                Gases installations.
-              </p>
             </div>
 
           </div>
