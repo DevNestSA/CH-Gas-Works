@@ -29,6 +29,11 @@ export const services: Service[] = [
     ],
     images: [
       '/images/services/domestic/domestic-1.jpeg',
+      '/images/services/domestic/domestic-2.jpeg',
+      '/images/services/domestic/domestic-3.jpeg',
+      '/images/services/domestic/domestic-4.jpeg',
+      '/images/services/domestic/domestic-5.jpeg',
+      '/images/services/domestic/domestic-6.jpeg',
     ],
   },
 

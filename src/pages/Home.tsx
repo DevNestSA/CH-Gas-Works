@@ -131,7 +131,7 @@ export function HomePage() {
                 Registered gas installer with the
                 <br />
                 LP Gas and Compressed
-                Gases installations.
+                Gases Associations.
               </h3>
 
               <div className="experience-registration__accent" />
