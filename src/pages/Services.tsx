@@ -1,6 +1,7 @@
 import { Seo } from '../components/Seo'
 import { services } from '../data/services'
 import { products } from '../data/products'
+import { ServiceGallery } from '../components/ServiceGallery'
 
 export function ServicesPage() {
   return (
@@ -15,7 +16,7 @@ export function ServicesPage() {
       <section className="page-hero">
         <div className="container">
 
-          <p className="eyebrow eyebrow--on-dark">
+          <p className="eyebrow">
             Our services
           </p>
 
@@ -50,7 +51,8 @@ export function ServicesPage() {
                 {String(i + 1).padStart(2, '0')}
               </div>
 
-              <div>
+
+              <div className="service-detail__content">
 
                 <p className="eyebrow">
                   {s.eyebrow}
@@ -69,6 +71,13 @@ export function ServicesPage() {
                 </p>
 
               </div>
+
+
+              <ServiceGallery
+                images={s.images}
+                title={s.title}
+              />
+
 
               <div className="service-detail__items">
 
